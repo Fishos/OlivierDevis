@@ -47,11 +47,18 @@ $hexagon-icon-small-font: 26px;
         border-top: none;
         border-bottom: none;
       }
+
+
+  img {
+    min-width: 100px !important;
+    height: auto;
+}
 .retrato{
-  width: 85px;
-  height: 130px;
-  margin-left: 21px;
-  margin-top: 8px;
+  width: 120px;
+    height: 138px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 4px;
   }
       #{$hexagon}{
         text-align: center;
