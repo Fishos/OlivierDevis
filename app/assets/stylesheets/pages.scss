@@ -425,3 +425,63 @@ body{
     }
   }
 }
+
+#print
+   .print-info {
+      display: block;
+      span {
+         display: block;
+         font-size: 1.4rem;
+         margin-bottom: 2rem;
+      }
+      strong {
+         display: block;
+         font-weight: bold;
+         text-decoration: underline;
+      }
+   }
+
+
+
+.pulse-button {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  font-size: 1.3em;
+  font-weight: light;
+  font-family: 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100px;
+  letter-spacing: 1px;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  background: #2d3e50;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(#2d3e50, .8);
+  -webkit-animation: pulse 1.8s infinite;
+}
+.pulse-button:hover {
+  -webkit-animation: none;
+  color: #D3D3D3;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    @include transform(scale(.9));
+  }
+  70% {
+    @include transform(scale(1));
+    box-shadow: 0 0 0 50px rgba(#2d3e50, 0);
+  }
+    100% {
+    @include transform(scale(.9));
+    box-shadow: 0 0 0 0 rgba(#2d3e50, 0);
+  }
+}
